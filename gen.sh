@@ -44,4 +44,4 @@ do
     
     break  # Exit the while loop after processing each wallet
   done
-done < "$HOME/wl_formated.txt"
+done < "$HOME/wl_formated1.txt"
