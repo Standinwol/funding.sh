@@ -36,4 +36,4 @@ do
         echo "Wallet $wallet already has balance. No need to send."
     fi
 
-done < "$HOME/wl_formated.txt"
+done < "$HOME/wl_formated1.txt"
