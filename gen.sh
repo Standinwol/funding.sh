@@ -35,8 +35,8 @@ do
     BAL=$(allorad query bank balance $address --node $NODE_URL --keyring-backend test --output json | jq -r '.amount')
     
     if [ -z "$BAL" ] || [ "$BAL" -eq 0 ]; then  # Check if BAL is empty or zero
-        echo "Balance is empty. Sending 10000000000000000uallo to $address..."
-        allorad tx bank send fundingWl $address 10000000000000000uallo --chain-id allora-testnet-1 --keyring-backend test --node $NODE_URL --gas-prices 1000000uallo --gas 100000 -y
+        echo "Balance is empty. Sending 1000000000000000uallo to $address..."
+        allorad tx bank send fundingWl $address 1000000000000000uallo --chain-id allora-testnet-1 --keyring-backend test --node $NODE_URL --gas-prices 1000000uallo --gas 100000 -y
         sleep 5
     else
         echo "Wallet $address already has balance. No need to send."
