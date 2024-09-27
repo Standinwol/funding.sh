@@ -1,9 +1,6 @@
 #!/bin/bash
 
-urls=("https://allora-rpc.testnet.allora.network/"
-    "https://allora-testnet-rpc.itrocket.net/"
-    "https://rpc.ankr.com/allora_testnet"
-    "http://66.70.177.125:27657/")
+urls=("https://rpc.ankr.com/allora_testnet")
 
 num_urls=${#urls[@]}
 
