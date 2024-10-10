@@ -22,7 +22,7 @@ do
     echo "Balance: $BAL"
     if [ -z "$BAL" ]; then
         echo "Sending..."
-        allorad tx bank send fundingWl $wallet 1000000000000000uallo --chain-id allora-testnet-1 --keyring-backend test --node $NODE_URL --gas-prices 1000000uallo --gas 100000 -y
+        allorad tx bank send fundingWl $wallet 10000000000000uallo --chain-id allora-testnet-1 --keyring-backend test --node $NODE_URL --gas-prices 1000000uallo --gas 100000 -y
         sleep 5
     else
         echo "No need to send"
